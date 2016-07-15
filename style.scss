@@ -1,0 +1,347 @@
+$niceBlue: #6c9ce4;
+$lightGrey: #c0c0c2;
+$background: #ececed;
+
+.flex{
+  display: flex;
+  &Center{
+    @extend .flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.clearPadding{
+	padding: 0 0;
+}
+
+.background{
+	background-color: $background;
+}
+
+.headerContainer{
+	background-color: $background;
+
+	.titleContainer p{
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: bold;
+
+		span{
+			display: block;
+			color: $niceBlue;
+		}
+	}
+
+	.menuContainer{
+		height: 150px;
+
+		.menuList{
+			padding: 0 0;
+
+			li{
+				display: inline-block;
+				list-style: none;
+				text-transform: uppercase;
+				font-size: 15px;
+
+				a:link, a:visited{
+					display: block;
+					padding: 30px 20px;
+					background-color: $lightGrey;
+					text-decoration: none;
+					color: white;
+					border-radius: 100%;				
+				}
+
+				a:hover, a:active{
+					display: block;
+					padding: 30px 20px;
+					background-color: $niceBlue;
+				}
+				/*
+				&:nth-child(3){
+					
+					a:link, a:visited{
+						display: block;
+						padding: 30px 10px;
+						background-color: $lightGrey;
+						text-decoration: none;
+						color: white;
+						border-radius: 100%;				
+					}
+
+					a:hover, a:active{
+						display: block;
+						padding: 30px 10px;
+						background-color: $niceBlue;
+					}
+				}
+				*/
+			}
+		} 
+	}
+}
+
+
+.firstSection{
+	padding-top: 0 0;
+	margin-top: 20px;
+
+	p:first-child{
+		font-size: 50px;
+		text-transform: uppercase;
+		color: $lightGrey;
+		font-weight: bold;
+	}
+
+	p:last-child{
+		font-size: 20px;
+		font-family: italic;
+
+		a:link, a:visited{
+			text-decoration: none;
+		}
+
+		span{
+			margin-top: 20px;
+			display: block;
+		}
+	}
+}
+
+.secondSection{
+	padding-top: 0 0;
+	margin: 20px 0;
+
+	p:first-child{
+		font-size: 50px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $lightGrey;
+	}
+
+	ul {
+	  list-style: none;
+	  padding: 0;
+	}
+
+	li {
+	  padding-left: 10px;
+	  padding-top: 20px;
+	  font-size: 15px;
+
+	  a:link, a:visited{
+	  	text-decoration: underline;
+	  	color: black;
+	  }
+
+	  a:hover, a:active{
+	  	color: $niceBlue;
+	  }
+	}
+
+	li:before {
+	  content: "\f0da"; /* FontAwesome Unicode */
+	  font-family: FontAwesome;
+	  display: inline-block;
+	  margin-left: -10px; /* same as padding-left set on li */
+	  width: 10px; /* same as padding-left set on li */
+	}
+}
+
+.thirdSection{
+
+	p{
+		font-size: 50px;
+		color: $lightGrey;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	form{
+
+		input{
+			display: block;
+			margin: 10px 0;
+		}
+	}
+}
+
+.fourthSection{
+	margin-top: 20px;
+
+	p{
+		font-size: 50px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: $lightGrey;
+	}
+
+	.detailsContainer{
+		font-size: 0;
+
+		.firstContact{
+			font-size: 0;
+			width: 50%;
+			display: inline-block;
+
+			p:first-child{
+				font-size: 50px;
+				color: black;
+				width: 20%;
+				display: inline-block;
+			}
+
+			p:last-child{
+				display: inline-block;
+				width: 70%;
+				font-size: 13px;
+				color: black;
+				color: $lightGrey;
+
+				span{
+					display: block;
+					color: black;
+				}
+			}
+		}
+	}
+}
+
+
+.fifthSection{
+	margin-top: 20px;
+
+	p:first-child{
+		font-size: 50px;
+		text-transform: uppercase;
+		color: $lightGrey;
+		font-weight: bold;
+	}
+
+	p:last-child{
+		font-family: italic;
+		font-size: 20px;
+
+		span{
+			margin-top: 20px;
+			display: block;
+		}
+	}
+}
+
+.sixthSection{
+	margin-top: 20px;
+	font-size: 0;
+
+	.rightArrow{
+		display: inline-block;
+		width: 10%;
+		font-size: 30px;
+		text-align: center;
+		position: relative;
+		top: 250px;
+	}
+
+	.pictureContainer{
+		display: inline-block;
+		background-image: url("pictures/example.jpg");
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		height: 500px;
+		width: 80%;
+
+		a{
+			font-size: 20px;
+			display: block;
+			height: 500px;
+			text-indent: -9999px;
+		}
+	}
+
+	.leftArrow{
+		display: inline-block;
+		width: 10%;
+		font-size: 30px;
+		text-align: center;
+		position: relative;
+		top: 250px;
+	}
+}
+
+.seventhSection{
+	margin-top: 20px;
+
+	p:first-child{
+		text-transform: uppercase;
+		font-size: 50px;
+		color: $lightGrey;
+		font-weight: bold;
+	}
+
+	p:nth-child(2){
+		font-size: 15px;
+		font-family: italic;
+		text-transform: uppercase;
+	}
+
+	.graphContainer{
+		text-align: center;
+	}
+
+	p:nth-child(4){
+		margin-top: 20px;
+		font-size:15px;
+		text-transform: uppercase;
+		font-family: italic;
+	}
+
+	.technologyPicture{
+		text-align: center;
+
+		img{
+			margin: 10px 10px
+		}
+	}
+}
+
+.eighthSection{
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	.minePictureContainer{
+		text-align: center;
+	}
+
+	p{
+		font-size: 50px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $lightGrey;
+	}
+
+	ul{
+		padding: 0 0;
+
+		li{
+			list-style: none;
+			font-family: italic;
+			font-size: 15px;
+		}
+	}
+}
+
+.footerContainer{
+	background-color: $background;
+	.footerSign{
+		border-top: 2px solid black;
+
+		p{
+			font-size: 25px;
+			font-family: italic;
+			text-align: center;
+			padding: 20px 20px;
+		}
+	}
+}

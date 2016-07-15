@@ -1,0 +1,240 @@
+.flex, .flexCenter {
+  display: flex; }
+  .flexCenter {
+    justify-content: center;
+    align-items: center; }
+
+.clearPadding {
+  padding: 0 0; }
+
+.background {
+  background-color: #ececed; }
+
+.headerContainer {
+  background-color: #ececed; }
+  .headerContainer .titleContainer p {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold; }
+    .headerContainer .titleContainer p span {
+      display: block;
+      color: #6c9ce4; }
+  .headerContainer .menuContainer {
+    height: 150px; }
+    .headerContainer .menuContainer .menuList {
+      padding: 0 0; }
+      .headerContainer .menuContainer .menuList li {
+        display: inline-block;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 15px;
+        				/*
+        				&:nth-child(3){
+        					
+        					a:link, a:visited{
+        						display: block;
+        						padding: 30px 10px;
+        						background-color: $lightGrey;
+        						text-decoration: none;
+        						color: white;
+        						border-radius: 100%;				
+        					}
+        
+        					a:hover, a:active{
+        						display: block;
+        						padding: 30px 10px;
+        						background-color: $niceBlue;
+        					}
+        				}
+        				*/ }
+        .headerContainer .menuContainer .menuList li a:link, .headerContainer .menuContainer .menuList li a:visited {
+          display: block;
+          padding: 30px 20px;
+          background-color: #c0c0c2;
+          text-decoration: none;
+          color: white;
+          border-radius: 100%; }
+        .headerContainer .menuContainer .menuList li a:hover, .headerContainer .menuContainer .menuList li a:active {
+          display: block;
+          padding: 30px 20px;
+          background-color: #6c9ce4; }
+
+.firstSection {
+  padding-top: 0 0;
+  margin-top: 20px; }
+  .firstSection p:first-child {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #c0c0c2;
+    font-weight: bold; }
+  .firstSection p:last-child {
+    font-size: 20px;
+    font-family: italic; }
+    .firstSection p:last-child a:link, .firstSection p:last-child a:visited {
+      text-decoration: none; }
+    .firstSection p:last-child span {
+      margin-top: 20px;
+      display: block; }
+
+.secondSection {
+  padding-top: 0 0;
+  margin: 20px 0; }
+  .secondSection p:first-child {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c0c0c2; }
+  .secondSection ul {
+    list-style: none;
+    padding: 0; }
+  .secondSection li {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 15px; }
+    .secondSection li a:link, .secondSection li a:visited {
+      text-decoration: underline;
+      color: black; }
+    .secondSection li a:hover, .secondSection li a:active {
+      color: #6c9ce4; }
+  .secondSection li:before {
+    content: "\f0da";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -10px;
+    /* same as padding-left set on li */
+    width: 10px;
+    /* same as padding-left set on li */ }
+
+.thirdSection p {
+  font-size: 50px;
+  color: #c0c0c2;
+  font-weight: bold;
+  text-transform: uppercase; }
+.thirdSection form input {
+  display: block;
+  margin: 10px 0; }
+
+.fourthSection {
+  margin-top: 20px; }
+  .fourthSection p {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #c0c0c2; }
+  .fourthSection .detailsContainer {
+    font-size: 0; }
+    .fourthSection .detailsContainer .firstContact {
+      font-size: 0;
+      width: 50%;
+      display: inline-block; }
+      .fourthSection .detailsContainer .firstContact p:first-child {
+        font-size: 50px;
+        color: black;
+        width: 20%;
+        display: inline-block; }
+      .fourthSection .detailsContainer .firstContact p:last-child {
+        display: inline-block;
+        width: 70%;
+        font-size: 13px;
+        color: black;
+        color: #c0c0c2; }
+        .fourthSection .detailsContainer .firstContact p:last-child span {
+          display: block;
+          color: black; }
+
+.fifthSection {
+  margin-top: 20px; }
+  .fifthSection p:first-child {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #c0c0c2;
+    font-weight: bold; }
+  .fifthSection p:last-child {
+    font-family: italic;
+    font-size: 20px; }
+    .fifthSection p:last-child span {
+      margin-top: 20px;
+      display: block; }
+
+.sixthSection {
+  margin-top: 20px;
+  font-size: 0; }
+  .sixthSection .rightArrow {
+    display: inline-block;
+    width: 10%;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 250px; }
+  .sixthSection .pictureContainer {
+    display: inline-block;
+    background-image: url("pictures/example.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 500px;
+    width: 80%; }
+    .sixthSection .pictureContainer a {
+      font-size: 20px;
+      display: block;
+      height: 500px;
+      text-indent: -9999px; }
+  .sixthSection .leftArrow {
+    display: inline-block;
+    width: 10%;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 250px; }
+
+.seventhSection {
+  margin-top: 20px; }
+  .seventhSection p:first-child {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #c0c0c2;
+    font-weight: bold; }
+  .seventhSection p:nth-child(2) {
+    font-size: 15px;
+    font-family: italic;
+    text-transform: uppercase; }
+  .seventhSection .graphContainer {
+    text-align: center; }
+  .seventhSection p:nth-child(4) {
+    margin-top: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: italic; }
+  .seventhSection .technologyPicture {
+    text-align: center; }
+    .seventhSection .technologyPicture img {
+      margin: 10px 10px; }
+
+.eighthSection {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .eighthSection .minePictureContainer {
+    text-align: center; }
+  .eighthSection p {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c0c0c2; }
+  .eighthSection ul {
+    padding: 0 0; }
+    .eighthSection ul li {
+      list-style: none;
+      font-family: italic;
+      font-size: 15px; }
+
+.footerContainer {
+  background-color: #ececed; }
+  .footerContainer .footerSign {
+    border-top: 2px solid black; }
+    .footerContainer .footerSign p {
+      font-size: 25px;
+      font-family: italic;
+      text-align: center;
+      padding: 20px 20px; }
+
+/*# sourceMappingURL=style.css.map */
